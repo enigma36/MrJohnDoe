@@ -1,0 +1,399 @@
+
+* {
+box-sizing:border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin:0;
+padding:0;
+background-color:black;
+color:white;
+font-family: Ariel, sans-serif;
+}
+
+
+
+/* -----------------------navbar ------------------- */
+
+.row {
+display:flex;
+
+}
+
+.navbar {
+display:flex;
+position:fixed;
+top:0;
+width:100%;
+padding:0;
+margin:0;
+background-color:rgba(255,255,255,0.22);
+z-index:1;
+flex:15%;
+}
+
+.navbar img, .navbar a i {
+display:none;
+}
+
+.navbar a {
+text-decoration:none;
+color:white;
+flex:25%;
+text-align:center;
+display:block;
+padding:2px 10px;
+}
+
+.navbar a:hover {
+background-color:#ddd;
+}
+
+/* ---------------------------- BODY ------------------- */
+		/* ------- home ------- */ 
+.container {
+margin-left:auto;
+margin-right:auto;
+max-width:992px;
+position:absolute;
+top:10%;
+left:10%;
+right:10%;
+flex:80%;
+padding-left:25px;
+}
+
+.home  {
+line-height:0.5;
+margin-bottom:50px;
+}
+
+.home h1 {
+font-size:60px;
+text-align:center;
+}
+
+.home p {
+text-align:center;
+}
+
+.home image {
+text-align:center;
+}
+
+/* -----------------about ------------------ */
+
+.about .intro p {
+text-align:justify;
+line-height:1.5;
+}
+
+.about .intro h1 {
+border-bottom:1px solid white;
+width:20%;
+line-height:2;
+font-weight:normal;
+}
+
+
+
+.skills h2 {
+font-weight:normal;
+}
+
+.skills .skillbar .info {
+color:gray;
+letter-spacing:1.5;
+line-height:3;
+}
+
+.skills .skillbar .bar {
+height:30px;
+width:100%;
+background-color:white;
+}
+
+.skills .skillbar .bar span {
+content:"";
+display:inline-block;
+height:30px;
+background-color:gray;
+}
+
+.skills .skillbar .bar.photography span {
+width:75%;
+}
+
+.skills .skillbar .bar.web span {
+width:90%;
+}
+
+.skills .skillbar .bar.photoshop span {
+width:60%;
+}
+
+.skills .data {
+margin-top:25px;
+background-color:#eee;
+color:black;
+display:flex;
+flex-direction:column;
+}
+
+.skills .data .record {
+flex:25%;
+text-align:center;
+line-height:0.5;
+}
+
+.skills .data .number {
+font-size:25px;
+}
+
+.skills .data .datatext {
+line-height:1.5;
+}
+
+.skills .button {
+border:none;
+background-color:#fff;
+padding:10px 20px;
+margin-top:20px;
+font-size:18px;
+}
+
+.skills .button i {
+padding-right:10px;
+}
+
+.skills .button:hover {
+background-color:#ddd;
+cursor:pointer;
+}
+
+.price {
+padding:0;
+margin:0;
+display:flex;
+flex-direction:column;
+}
+
+.price .price-details {
+color:black;
+background-color:#eee;
+opacity:0.5;
+
+}
+
+.price .price-details h1 {
+background-color:#aaa;
+padding:30px;
+color:white;
+font-weight:normal;
+text-align:center;
+}
+
+.price .price-details .first {
+margin-top:-20px;
+}
+
+.price .price-details p {
+padding:10px;
+text-align:center;
+}
+
+
+.price .price-details .extra {
+font-size:28px;
+}
+
+.price .price-details .extra .pay {
+font-size:14px;
+color:gray;
+display:block;
+font-style:italic;
+}
+
+.price .price-details .end {
+padding:25px;
+background-color:#ddd;
+}
+
+.price .price-details .end .button {
+padding:10px 18px;
+font-size:18px;
+background-color:#eee;
+color:black;
+border:none;
+}
+
+.price .price-details .end .button:hover {
+background-color:black;
+color:white;
+cursor:pointer;
+}
+
+.price .price-details p+p {
+border-top:1px solid gray;
+}
+
+.price .price-details:hover {
+opacity:1;
+}
+
+.image {
+display:flex;
+}
+
+.image img {
+border-radius:50%;
+}
+
+.image .comment {
+padding:0 20px;
+font-size:18px;
+}
+/* --------------------photos ----------------- */
+#photos {
+font-weight:normal;
+padding:0 10px;
+display:inline-block;
+border-bottom:1px solid white;
+}
+.photos img {
+padding:10px;
+}
+
+.contact .heading {
+font-weight:normal;
+border-bottom:1px solid white;
+display:inline-block;
+}
+
+.contact .location p i {
+font-size:30px;
+padding-right:15px;
+}
+
+.contact .loaction p span {
+font-size:16px;
+}
+
+.form {
+margin-top:50px;
+}
+
+
+.form input[type="text"] {
+font-size:18px;
+width:100%;
+height:50px;
+margin-bottom:10px;
+padding:10px;
+}
+
+.form button {
+padding:15px 30px;
+border:none;
+font-size:18px;
+}
+.form i {
+padding-right:10px;
+}
+
+.form button:hover {
+background-color:#ccc;
+cursor:pointer;
+}
+
+.icons i {
+margin-top:80px;
+margin-bottom:50px;
+font-size:30px;
+padding:0 3px;
+opacity:0.5;
+}
+
+.icons i:hover {
+opacity:1;
+}
+
+/* -------------------- MEDIA QUERIES ----------------- */
+
+
+
+ @media screen and (min-width:600px) {
+
+.container {
+margin-left:auto;
+margin-right:auto;
+max-width:1000px;
+position:absolute;
+top:10%;
+left:18%;
+right:10%;
+}
+
+.navbar {
+display:block;
+position:fixed;
+width:120px;
+height:100%;
+overflow:auto;
+}
+
+.navbar img {
+display:block;
+}
+
+.navbar a {
+text-decoration:none;
+color:white;
+padding:15px;
+display:block;
+text-align:center;
+}
+
+.navbar a i {
+font-size:35px;
+display:block;
+}
+
+.navbar a p {
+font-size:14px;
+}
+
+.skills .data {
+flex-direction:row;
+}
+
+.price {
+flex-direction:row;
+}
+
+.basic {
+padding:10px;
+flex:50%;
+}
+
+.pro {
+padding:10px;
+flex:50%;
+}
+
+.photos {
+display:flex;
+flex-warp:wrap;
+}
+
+.photos .column {
+flex:50%;
+}
+
+}
+
+
